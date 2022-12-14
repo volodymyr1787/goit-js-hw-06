@@ -13,7 +13,13 @@ function onFormSubmit(evt) {
         password
     };
 
-    console.log (formData);
+    if (!mail || !password) {
+        alert(`всі поля повинні бути заповнені`);
+    } else {
+       console.log (formData);
+    }
+
+    
 
     
     evt.currentTarget.reset()
